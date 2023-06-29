@@ -1,0 +1,264 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+}
+
+/* Titres */
+h1{
+    text-align: center;
+}
+h2{
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+}
+*{
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+}
+
+
+
+/* Boutons */
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+}
+  
+/* Plus */
+.plus-btn {
+    margin-top: 5px;
+    background-color: #509534;
+}
+.plus-btn:hover {
+    background-color: #287233;
+}
+  
+/* Moins */
+.moins-btn {
+    background-color: #c73237;
+}
+.moins-btn:hover {
+    background-color: #850606;
+}
+
+/* Commencer */
+.commencer-btn {
+    box-shadow: 0 4px #22486c;
+}
+.commencer-btn:hover {
+    background-color: #22486c;
+}
+
+/* Rejouer */
+.rejouer-btn {
+    box-shadow: 0 4px #22486c;
+}
+.rejouer-btn:hover {
+    background-color: #22486c;
+}
+
+/* Regles */
+#regle-btn {
+    background-color: #555;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, 50%);
+    
+}
+#regle-btn:hover {
+    background-color: #777;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+#fermer-btn{
+    background-color: #c73237;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+#fermer-btn:hover {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #850606;
+}
+#csm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: #333;
+    box-shadow: 0px 0px 10px white;
+    width: 500px;
+    max-width: 50%;
+    text-align: center;
+}
+#csm p{
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: left;
+}
+
+/* Menu */
+#menu-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(50%, 50%);
+    background-color: #555;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    
+}
+#menu-btn:hover {
+    background-color: #777;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+#fermer-btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c73237;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+}
+#fermer-btn2:hover {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #850606;
+}
+#menu{
+    position: absolute;
+    top: 70px;
+    text-align: left;
+}
+#lien{
+    margin-left: 15px;
+    text-align: left;
+}
+
+/* Pays */
+#paysA,
+#paysB {
+    font-family: 'Secular One', sans-serif;
+}
+
+/* Positionnement */
+#score,
+#highscore{
+    margin-top: 10px;
+}
+#container{
+    margin-top: 2%;
+}
+
+/* Résultat */
+#resultat{
+    font-family: 'Secular One', sans-serif;
+}
+
+/* Liens */
+a{
+    color: #fff;
+}
+a:hover{
+    color: #d8dfe3;
+}
+
+/* Drapeau */
+img{
+    height: 100px;
+}
+
+#drapeauA,
+#drapeauB{
+    margin-top: 50px;
+}
+
+/* Ultimate */
+.population-btn,
+.superficie-btn {
+    background-color: #509534;
+}
+.population-btn:hover,
+.superficie-btn:hover {
+    background-color: #287233;
+}
+
+.aucun-btn {
+    background-color: #c73237;
+}
+.aucun-btn:hover {
+    background-color: #850606;
+}
+
+
+/* Responsive */
+@media only screen and (min-width: 601px) {
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    button{
+        font-size: 20px;
+    }
+    #paysA,
+    #paysB {
+        font-family: 'Secular One', sans-serif;
+        font-size: 30px;
+    }
+    #popPaysA,
+    #supPaysA,
+    #denPaysA{
+        font-size: 25px;
+    }
+    #score,
+    #highscore{
+        font-size: 25px;
+    }
+    #resultat{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+}

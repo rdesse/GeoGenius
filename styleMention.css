@@ -1,0 +1,39 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Abel', sans-serif;
+    text-align: left;
+}
+
+/* Titres */
+h1{
+    text-align: center;
+    font-size: 3.5em;
+}
+h2{
+    font-family: 'Secular One', sans-serif;
+    text-align: left;
+    font-size: 2.5em;
+}
+
+*{
+    font-family: 'Abel', sans-serif;
+    text-align: left;
+}
+
+a{
+    color: #fff;
+}
+a:hover{
+    color: #d8dfe3;
+}
+
+.accueil{
+    text-align: center;
+    font-size: 2em;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GeoScale - Population</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="images/LogoPopulation.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script> 
+      $(function(){
+        $("#includedContent").load("menu.html"); 
+      });
+    </script>
+  </head>
+  <body>
+    <h1>GeoScale</h1>
+    <h2>Population</h2>
+    <button class="commencer-btn" id="commencer-btn">Commencer</button>
+    <div>
+      <button id="regle-btn">?</button>
+      <div id="csm">
+        <h3>Comment jouer ?</h3>
+        <p> - A chaque tour vous devez deviner si le pays proposé à plus ou moins d'habitants que le pays précedent. </p>
+        <p> - Le but étant de réaliser la plus grande série possible.</p>
+        <p> - Par exemple si le premier pays est la France et que le deuxième pays est la Chine vous devez choisir si il y a plus ou moins d'habitants en Chine qu'en France.</p>
+        <button id="fermer-btn" onclick="fermerBoite()">X</button>
+      </div>      
+    </div>
+    <div>
+      <button id="menu-btn">-</button>
+      <div id="menu" hidden>
+        <br>
+        <div id="includedContent"></div>
+        <br>
+        <button id="fermer-btn2" onclick="fermerBoite2()">X</button>
+      </div>      
+    </div>
+    <div>
+      <div id="resultat"></div>
+      <div id="highscore"></div>  
+      <div id="score"></div>   
+    </div>
+    <div id="container">
+      <div id="drapeauA"></div>
+      <div id="paysA"></div>
+      <div id="popPaysA"></div>
+      <div id="drapeauB"></div>
+      <div id="paysB"></div>
+    </div>
+    <div>
+      <button class="plus-minus-btn moins-btn" id="moins-btn">Moins</button>
+      <button class="plus-minus-btn plus-btn" id="plus-btn">Plus</button>
+    </div>
+    <button class="rejouer-btn" id="rejouer-btn">Rejouer</button>
+    <br>
+    <script src="population.js"></script>
+  </body>
+</html>
