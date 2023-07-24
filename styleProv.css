@@ -12,6 +12,13 @@ body {
     font-family: 'Abel', sans-serif;
     background-color: #333;
     color: #fff;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 64px;
 }
 
 /* Accueil */
@@ -28,6 +35,7 @@ body {
 }
 .jeu a {
     text-decoration: none;
+    font-size: 20px;
     color: #fff;
     display: block;
     margin-top: 10px;
@@ -36,12 +44,32 @@ body {
     color: #cfdbd5;
 }
 .jeu img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+}
+.footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+}
+.footer a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+.footer a:hover {
+    color: #cfdbd5;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-
+    .jeu img {
+        width: 100px;
+        height: 100px;
+    }
 }
