@@ -1,0 +1,47 @@
+/* Imports */ 
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Secular+One&display=swap');
+
+/* Général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Abel', sans-serif;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Accueil */
+.jeux {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.jeu {
+    text-align: center;
+    margin: 20px;
+}
+.jeu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+}
+.jeu a:hover{
+    color: #cfdbd5;
+}
+.jeu img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+}
