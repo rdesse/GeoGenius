@@ -18,37 +18,45 @@ body {
 h1 {
     text-align: center;
     padding: 20px 0;
-    font-size: 64px;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: 'Secular One', sans-serif;
 }
 
 /* Accueil */
-.jeux {
+.accueilSection .jeux {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
 }
-.jeu {
+.accueilSection h1 {
+    font-size: 64px;
+}
+.accueilSection .jeu {
     text-align: center;
     margin: 20px;
 }
-.jeu a {
+.accueilSection .jeu a {
     text-decoration: none;
     font-size: 20px;
     color: #fff;
     display: block;
     margin-top: 10px;
 }
-.jeu a:hover{
+.accueilSection .jeu a:hover{
     color: #cfdbd5;
 }
-.jeu img {
+.accueilSection .jeu img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
 }
-.footer {
+.accueilSection .footer {
     text-align: center;
     padding: 10px;
     position: fixed;
@@ -57,19 +65,60 @@ h1 {
     width: 100%;
     background-color: #333;
 }
-.footer a {
+.accueilSection .footer a {
     text-decoration: none;
     font-size: 20px;
     color: #fff;
 }
-.footer a:hover {
+.accueilSection .footer a:hover {
+    color: #cfdbd5;
+}
+
+/* Mentions légales */
+.mentionSection .mentions {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.mentionSection .mentions p{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: justify;
+}
+.mentionSection .mentions a{
+    text-decoration: none;
+    color: #fff;
+}
+.mentionSection .mentions a:hover{
+    color: #cfdbd5;
+}
+.mentionSection .footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+}
+.mentionSection .footer a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+.mentionSection .footer a:hover {
     color: #cfdbd5;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .jeu img {
+    /* Accueil */
+    .accueilSection .jeu img {
         width: 100px;
         height: 100px;
+    }
+
+    /* Mention */
+    .mentionSection .mentions{
+        padding: 20px;
     }
 }
